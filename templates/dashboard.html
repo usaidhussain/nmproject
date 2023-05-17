@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="dashboard-container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div id="sidebar-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html" onclick="toggleSidebar(); setActiveNav(this)">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#background-remover" onclick="toggleSidebar(); setActiveNav(this)">
+                            <i class="fas fa-images"></i> Background Remover
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cartoon-face" onclick="toggleSidebar(); setActiveNav(this)">
+                            <i class="fas fa-paint-brush"></i> Cartoon Face
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#remove-vehicle-background" onclick="toggleSidebar(); setActiveNav(this)">
+                            <i class="fas fa-car"></i> Remove Vehicle Background
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <script src="https://kit.fontawesome.com/21663bf7dc.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/dash.js') }}"></script>
+</body>
+</html>

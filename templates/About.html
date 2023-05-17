@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us - ImageAI</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/abo.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+	<div class="navbar">
+		<a href="{{ url_for('home') }}">Home</a>
+		<a href="{{ url_for('testimonials') }}">Testimonials</a>
+		<a class="active" href="{{ url_for('about') }}">About</a>
+		<a href="{{ url_for('imageai') }}">ImageAI</a>
+		<a href="{{ url_for('loginpage') }}">Login</a>
+	</div>
+    <main>
+        <h1>About Us</h1>
+        <p>ImageAI is a company dedicated to providing the best image recognition services. Our team of experts has years of experience in the field and is committed to delivering high-quality results for our clients. </p>
+        <p>At ImageAI, we believe that technology should be accessible to everyone. That's why we offer our services at affordable prices without compromising on quality. </p>
+    
+        <form class="contact-form" action="#" method="post">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    

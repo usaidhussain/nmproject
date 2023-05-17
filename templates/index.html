@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+	<!-- Navbar -->
+	<div class="navbar">
+		<a class="active" href="{{ url_for('home') }}">Home</a>
+		<a href="{{ url_for('testimonials') }}">Testimonials</a>
+		<a href="{{ url_for('about') }}">About</a>
+		<a href="{{ url_for('imageai') }}">ImageAI</a>
+		<a href="{{ url_for('loginpage') }}">Login</a>
+	</div>
+	
+	<!-- Main content -->
+	<div class="main-content">
+		<div class="main-title">Welcome to Pixel Perfection!</div>
+		<div class="main-description">Pixel perfection: Transforming your photos with our cutting-edge image editing platform</div>
+		<p>Pixel Perfection is an innovative image editing platform that allows users to transform their photos with ease and precision. Our cutting-edge software provides a wide range of tools and features that enable users to edit their images to achieve pixel-perfect results. Whether you're a professional photographer, graphic designer, or just someone who loves to take photos, Pixel Perfection is the perfect tool for enhancing your images. With its intuitive user interface and powerful editing tools, you can easily adjust or remove your image backgrounds, car image backgrounds, Cartoon your face &  Face beauty, and more to create stunning images that are sure to impress. At Pixel Perfection, we understand the importance of high-quality images in today's digital age, and we're committed to providing our users with the tools they need to achieve pixel-perfect results. Whether you're looking to enhance your personal photos or create professional-quality images for your business or clients, Pixel Perfection has everything you need to get the job done.</p>
+		<div>
+			<a href="LoginPage.html" class="btn">Discover more</a>
+			<a href="About.html" class="btn">Contact us</a>
+		</div>
+	</div>
+</body>
+</html>

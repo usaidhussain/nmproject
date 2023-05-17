@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageAI Models</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ima.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+	<div class="navbar">
+    <a href="{{ url_for('home') }}">Home</a>
+		<a href="{{ url_for('testimonials') }}">Testimonials</a>
+		<a href="{{ url_for('about') }}">About</a>
+		<a class="active" href="{{ url_for('imageai') }}">ImageAI</a>
+		<a href="{{ url_for('loginpage') }}">Login</a>
+	</div>
+  <main>
+    <h1>ImageAI Models</h1>
+
+    <div class="model-card">
+      <img src="../static/css/icons8-t-shirt-50.png" alt="Model Image">
+      <h2>Object Detection Model</h2>
+      <p>This is an object detection model that can detect various objects in images and videos with high accuracy. It uses advanced deep learning algorithms and is pre-trained on a large dataset of images.</p>
+    </div>
+    
+    <div class="model-card">
+      <img src="../static/css/icons8-star-badge-68.png" alt="Model Image">
+      <h2>Image Classification Model</h2>
+      <p>This is an image classification model that can classify images into various categories with high accuracy. It uses advanced deep learning algorithms and is pre-trained on a large dataset of images.</p>
+    </div>
+    
+    <div class="model-card">
+      <img src="../static/css/icons8-wedding-dress-64.png" alt="Model Image">
+      <h2>Object Tracking Model</h2>
+      <p>This is an object tracking model that can track various objects in real-time videos with high accuracy. It uses advanced deep learning algorithms and is pre-trained on a large dataset of images.</p>
+    </div>
+</main>
+</body>
+</html>
